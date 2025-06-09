@@ -57,3 +57,14 @@ ProteinCalc/
 │ └── fat_loss.jpg → Fat loss physique goal photo
 
 └── README.md → This file
+
+
+## Credits and Resources
+
+- Created by [@SLUSHHIE](https://github.com/SLUSHHIE)
+- Built with Python, Flask, Java, HTML, and CSS
+- AI assistance and formatting guidance provided by ChatGPT for README.md, as well as assistance in debugging for image display and correcting links and syntax 
+- AI assistance (ChatGPT) used for checking correctness of directory tree 
+- AI assistance and teachers assistance used for steps on moving files onto Pythonanywhere as well as steps and debugging on correct syntax for Flask 
+- AI assistance (ChatGPT) as well as Duck debugger for help on CSS syntax for the appearance of my website 
+
