@@ -5,7 +5,7 @@ ProteinCalc is a simple web-based nutrition calculator designed to help users de
 
 ## Screenshot
 
-![Screenshot of ProteinCalc](images/screenshot.png)
+![Screenshot of ProteinCalc](static/images/screenshot.png)
 
 
 ## How to Use the Website
