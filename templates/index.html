@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Intake Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="formSection">
+            <h1>Protein Intake Calculator</h1>
+            <form id="proteinForm">
+                <label for="bodyWeight">Current Body Weight (lbs):</label>
+                <input type="number" id="bodyWeight" required>
+                <br>
+
+                <label for="goalWeight">Goal Weight (lbs):</label>
+                <input type="number" id="goalWeight" required>
+                <br>
+
+                <label for="physiqueGoal">Physique Goal:</label>
+                <select id="physiqueGoal" onchange="showImage()">
+                    <option value="">-- Select --</option>
+                    <option value="Muscle Gain">Muscle Gain</option>
+                    <option value="Fat Loss">Fat Loss</option>
+                    <option value="Maintenance">Maintenance</option>
+                </select>
+                <br>
+
+                <label for="activityLevel">Activity Level:</label>
+                <select id="activityLevel">
+                    <option value="Not Active">Not Active</option>
+                    <option value="Lightly Active">Lightly Active</option>
+                    <option value="Very Active">Very Active</option>
+                </select>
+                <br>
+
+                <button type="submit">Calculate Protein Intake</button>
+            </form>
+
+            <div id="result">
+                <h2>Your Suggested Protein Intake is ≈ </h2>
+                <p id="proteinResult">-</p>
+                <h3>Wondering what foods to eat? <a href="{{ url_for('diet') }}" onclick="alert('Link clicked!')">click here!</a></h3>
+                <h3>Here are some quick alternatives to your favorite foods! <a href="{{ url_for('fastfood') }}" onclick="alert('Link clicked!')">click here!</a></h3>
+            </div>
+        </div>
+
+        <div id="imageSection">
+            <img id="goalImage" src="" alt="Physique Goal Image">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='java.js') }}"></script>
+</body>
+</html>

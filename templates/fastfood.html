@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fastfood.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastfood</title>
+</head>
+<body>
+    <div id="container">
+        <h1 class="highlight">Fast Food to help reach your protein goals</h1>
+        <div class="logo-wrapper">
+
+            <div class="logo-pair">
+                <div class="logo-box" onclick="showDetails('mcdonalds')">
+                    <img src="https://www.uticalibrary.com/site-assets/images/mcdonalds-logo.png/@@images/image.png" alt="McDonald's Logo">
+                </div>
+                <div class="details-box" id="details-mcdonalds">
+                    <div class="image-entry">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/McD-Egg-McMuffin.jpg" alt="McMuffin - Wikipedia"/>
+                        <p><strong>Egg White Delight McMuffin:</strong> A low-calorie, high-protein breakfast sandwich option.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/mcdonalds-artisan-grilled-chicken-sandwich-e1732635694111.jpg" alt="Grilled Chicken Sandwich">
+                        <p><strong>Grilled Chicken Sandwich:</strong> Lean grilled chicken breast, a good protein source with fewer calories.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://m.media-amazon.com/images/I/51wYv9ua2qL.jpg" alt="Diet Coke">
+                        <p><strong>Diet Coke:</strong> Zero-calorie beverage to pair with your meal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-pair">
+                <div class="logo-box" onclick="showDetails('popeyes')">
+                    <img src="https://download.logo.wine/logo/Popeyes/Popeyes-Logo.wine.png" alt="Popeyes Logo">
+                </div>
+                <div class="details-box" id="details-popeyes">
+                    <div class="image-entry">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja2q3X_cMHcHa0HW1OBDPOQLloFp9weF8GQeOqv5dfV4-fKx5Xf2IM1ZwOIe0Dbp6j43hJnItQaqa12hjojmYnBOGG3qpwB69AapiJM1adkj9Y-s3zdaYcDXae5uTjM4PfURBEQy0wX9vaXQxJBTLjvsRrf2poLeS0L5PCHpbPvxasyNQKes0lsLV1/s640/popeyes-blackened-chicken-sandwich.jpg" alt="Blackened Chicken Sandwich">
+                        <p><strong>Blackened Chicken Sandwich:</strong> Grilled-style, high in protein, lower in fat.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5f9b6df57e950808cac2a3eb/1632875713916-DXDLXBTYPCKFDD6VFG65/DSC02919.jpeg" alt="Popeyes Blackened Chicken Tenders and Fries — Low Carb Love™"/>
+                        <p><strong>Blackened Chicken Tenders:</strong> 3 pieces for 170 calories and 26g of protein, a great macro-friendly choice.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://m.media-amazon.com/images/I/51wYv9ua2qL.jpg" alt="Diet Coke">
+                        <p><strong>Diet Coke:</strong> Calorie-free soda to go with your high-protein meal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-pair">
+                <div class="logo-box" onclick="showDetails('wendys')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Wendy%27s_full_logo_2012.svg/1200px-Wendy%27s_full_logo_2012.svg.png" alt="Wendy's Logo">
+                </div>
+                <div class="details-box" id="details-wendys">
+                    <div class="image-entry">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/230321113929-embargoed-wendys-chicken-wrap.jpg" alt="Chicken Wrap">
+                        <p><strong>Grilled Chicken Wrap:</strong> A convenient and high-protein snack.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://www.wendys.com/sites/default/files/styles/max_650x650/public/2021-05/avocado-chicken-salad-1325_medium_US_en.png" alt="Avocado Chicken Salad">
+                        <p><strong>Avocado Chicken Salad:</strong> Fresh veggies and grilled chicken offer protein and healthy fats.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://m.media-amazon.com/images/I/51wYv9ua2qL.jpg" alt="Diet Coke">
+                        <p><strong>Diet Coke:</strong> Low-calorie drink to complement a lighter meal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-pair">
+                <div class="logo-box" onclick="showDetails('chipotle')">
+                    <img src="https://download.logo.wine/logo/Chipotle_Mexican_Grill/Chipotle_Mexican_Grill-Logo.wine.png" alt="Chipotle Logo">
+                </div>
+                <div class="details-box" id="details-chipotle">
+                    <div class="image-entry">
+                        <img src="https://www.chipotle.com/content/dam/chipotle/pages/lifestyle-bowls/us/2024/bowl-images/larger-images/Mobile-335x178-HighProteinBowl@2x.png" alt="High Protein Bowl">
+                        <p><strong>High Protein Bowl:</strong> Loaded with double chicken, rice, beans, and veggies for maximum gains.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://www.chipotle.com/content/dam/chipotle/pages/lifestyle-bowls/us/2024/bowl-images/larger-images/Desktop-586x286-KetoSaladBowl@2x.png" alt="Keto Salad Bowl">
+                        <p><strong>Keto Salad Bowl:</strong> A low-carb, high-fat and protein-rich option with steak or chicken.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://m.media-amazon.com/images/I/51wYv9ua2qL.jpg" alt="Diet Coke">
+                        <p><strong>Diet Coke:</strong> Sugar-free beverage to go with your bowl.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-pair">
+                <div class="logo-box" onclick="showDetails('burgerking')">
+                    <img src="https://www.festisite.com/static/partylogo/img/logos/burger-king.png" alt="Burger King Logo">
+                </div>
+                <div class="details-box" id="details-burgerking">
+                    <div class="image-entry">
+                        <img src="https://burgerking.com.my/upload/image/Product/86/0-Tendergrill%20Ala%20Carte.png" alt="Tendergrill Chicken Sandwich">
+                        <p><strong>Tendergrill Chicken Sandwich:</strong> Flame-grilled for protein without extra breading.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://www.burgerking.ee/images/optimized/products/bacon-king-desktop-f82f4dfe6e9e09616a5e4acb449ee4e8.png" alt="Bacon King">
+                        <p><strong>Bacon King:</strong> Higher fat and protein — good for bulking or keto diets.</p>
+                    </div>
+                    <div class="image-entry">
+                        <img src="https://m.media-amazon.com/images/I/51wYv9ua2qL.jpg" alt="Diet Coke">
+                        <p><strong>Diet Coke:</strong> Classic low-calorie option for hydration.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='fastfood.js') }}"></script>
+</body>
+</html>
