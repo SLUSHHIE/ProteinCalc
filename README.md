@@ -10,7 +10,7 @@ ProteinCalc is a simple web-based nutrition calculator designed to help users de
 
 ## How to Use the Website
 
-[Watch my video explanation here](https://your-video-link.com)  
+[Watch my video explanation here]((https://www.loom.com/share/e27fb2ff976e400ea88afd4878a79830?sid=862608c8-5c42-4fe6-8407-b6319f3f380f))  
 
 ### Instructions:
 
